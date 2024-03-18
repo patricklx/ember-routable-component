@@ -1,0 +1,17 @@
+{
+  "solution": {
+    "ember-routable-component": {
+      "impact": "minor",
+      "oldVersion": "0.0.1",
+      "newVersion": "0.1.0",
+      "constraints": [
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        }
+      ],
+      "pkgJSONPath": "./ember-routable-component/package.json"
+    }
+  },
+  "description": "## Release (2024-03-18)\n\nember-routable-component 0.1.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-routable-component`, `test-app`\n  * [#5](https://github.com/patricklx/ember-routable-component/pull/5) first release ([@patricklx](https://github.com/patricklx))\n\n#### :house: Internal\n* [#4](https://github.com/patricklx/ember-routable-component/pull/4) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n* [#3](https://github.com/patricklx/ember-routable-component/pull/3) delete file ([@patricklx](https://github.com/patricklx))\n* [#2](https://github.com/patricklx/ember-routable-component/pull/2) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n\n#### Committers: 2\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
+}
