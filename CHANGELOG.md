@@ -2,6 +2,17 @@
 
 ## Release (2024-03-18)
 
+ember-routable-component 0.1.1 (patch)
+
+#### :bug: Bug Fix
+* `ember-routable-component`, `test-app`
+  * [#8](https://github.com/patricklx/ember-routable-component/pull/8) fix controller arg ([@patricklx](https://github.com/patricklx))
+
+#### Committers: 1
+- Patrick Pircher ([@patricklx](https://github.com/patricklx))
+
+## Release (2024-03-18)
+
 ember-routable-component 0.1.0 (minor)
 
 #### :rocket: Enhancement
