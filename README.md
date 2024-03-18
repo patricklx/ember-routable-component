@@ -1,13 +1,11 @@
-# ember-route-template
+# ember-routable-component
 
 [eti]: https://github.com/ember-template-imports/ember-template-imports
 [polaris]: https://blog.emberjs.com/ember-5-0-released/#toc_the-journey-towards-ember-polaris
 [resources]: https://github.com/NullVoxPopuli/ember-resources/blob/main/docs/docs/README.md
 [rfc]: https://rfcs.emberjs.com/id/0779-first-class-component-templates/#typescript
-[discourse]: https://discourse.org
 
-Provides an adapter for using [`<template>` tags][eti] and components as route
-templates.
+Provides an adapter for using [`<template>` tags][eti] and components in route files
 
 ## Motivation
 
@@ -41,12 +39,12 @@ paradigm is available.
 
 ## Usage
 
-```js
-// app/templates/my-route.gjs
-import RouteTemplate from 'ember-routable-component';
+```gjs
+// app/routes/my-route.gjs
+import RoutableComponentRoute from 'ember-routable-component';
 
 // This adapter converts the `<template>` into a route template
-export default RouteTemplate(<template>Hello world!</template>);
+export default RoutableComponentRoute(<template>Hello world!</template>);
 ```
 
 Your `<template>` will have access to the `{{@model}}` and `{{@controller}}`
@@ -54,9 +52,9 @@ arguments, if you need them. Other features like plain function helpers and
 the ability to import components (etc) into the `<template>` scope works as
 usual:
 
-```js
-// app/templates/my-route.gjs
-import RouteTemplate from "ember-route-template";
+```gjs
+// app/routes/my-route.gjs
+import RoutableComponentRoute from "ember-routable-component";
 
 // components can be imported as usual
 import Hello from "my-app/components/hello";
@@ -71,7 +69,7 @@ function stringify(value) {
 }
 
 // This adapter converts the `<template>` into a route template
-export default RouteTemplate(
+export default RoutableComponentRoute(
   <template>
     The model is: {{stringify @model}}
     The controller is: {{stringify @controller}}
@@ -83,9 +81,9 @@ export default RouteTemplate(
 You can even convert components into route templates with this adapter (a.k.a.
 "routable components"):
 
-```js
-// app/templates/my-route.gjs
-import RouteTemplate from 'ember-route-template';
+```gjs
+// app/routes/my-route.gjs
+import RoutableComponentRoute from 'ember-routable-component';
 import Component from "@glimmer/component";
 
 class MyRouteComponent extends Component {
@@ -96,7 +94,7 @@ class MyRouteComponent extends Component {
   }
 }
 
-export default RouteTemplate(MyRouteComponent);
+export default RoutableComponentRoute(MyRouteComponent);
 ```
 
 With this feature, it eliminates most of the reasons for needing controllers,
@@ -113,7 +111,7 @@ in with the `@model` and `@controller` arguments appropriately set.
 The hello world example from above is similar to first creating the component
 in the usual global location in `app/components`:
 
-```js
+```gjs
 // app/components/hello-world.gjs
 <template>Hello world!</template>
 ```
@@ -144,9 +142,9 @@ components in Glint.
 
 According to the [RFC][rfc], you can supply a signature like this:
 
-```tsx
-// app/templates/my-route.gts
-import RouteTemplate from "ember-route-template";
+```gts
+// app/routes/my-route.gts
+import RoutableComponentRoute from "ember-routable-component";
 
 interface MyRouteSignature {
   Args: {
@@ -154,7 +152,7 @@ interface MyRouteSignature {
   }
 }
 
-export default RouteTemplate(
+export default RoutableComponentRoute(
   // This does not actually work!
   <template[MyRouteSignature]>
     Now Glint is supposed to know {{@model}} is a string.
@@ -166,9 +164,9 @@ However, as of writing, this feature was never implemented, and the Ember
 TypeScript is considering other alternatives. In the meantime, the adapter
 function can accept a generic argument for the signature to make things easier:
 
-```tsx
+```gts
 // app/templates/my-route.gts
-import RouteTemplate from "ember-route-template";
+import RoutableComponentRoute from "ember-routable-component";
 
 interface MyRouteSignature {
   Args: {
@@ -176,7 +174,7 @@ interface MyRouteSignature {
   }
 }
 
-export default RouteTemplate<MyRouteSignature>(
+export default RoutableComponentRoute<MyRouteSignature>(
   <template>
     Now Glint is supposed to know {{@model}} is a string.
   </template>
@@ -186,9 +184,9 @@ export default RouteTemplate<MyRouteSignature>(
 This feature is only needed for bare `<template>` tags. Class-based components
 don't have this issue as they already accept a signature generic:
 
-```tsx
+```gts
 // app/templates/my-route.gts
-import RouteTemplate from "ember-route-template";
+import RoutableComponentRoute from "ember-routable-component";
 import Component from "@glimmer/component";
 
 interface MyRouteSignature {
@@ -203,8 +201,34 @@ class MyRouteComponent extends Component<MyRouteSignature> {
   </template>
 }
 
-export default RouteTemplate(MyRouteComponent);
+export default RoutableComponentRoute(MyRouteComponent);
 ```
+
+If you need custom functionality in routes:
+
+```gts
+// app/templates/my-route.gts
+import RoutableComponentRoute from "ember-routable-component";
+import Component from "@glimmer/component";
+
+interface MyRouteSignature {
+  Args: {
+    model: string;
+  }
+}
+
+class MyRouteComponent extends Component<MyRouteSignature> {
+  <template>
+    Glint knows this is a string: {{@model}}
+  </template>
+}
+
+export default class extends RoutableComponentRoute(MyRouteComponent) {
+  myfunc() {
+  }
+}
+```
+
 
 ## Compatibility
 
@@ -214,7 +238,7 @@ export default RouteTemplate(MyRouteComponent);
 ## Installation
 
 ```
-ember install ember-route-template
+ember install ember-routable-component
 ```
 
 ## Contributing
