@@ -1,8 +1,8 @@
 {
   "private": true,
-  "repository": "https://github.com/discourse/ember-routable-component",
+  "repository": "https://github.com/patricklx/ember-routable-component",
   "license": "MIT",
-  "author": "Discourse <team@discourse.org>",
+  "author": "Patrick Pircher",
   "scripts": {
     "build": "pnpm --filter ember-routable-component run build",
     "lint": "pnpm --filter * run lint",
