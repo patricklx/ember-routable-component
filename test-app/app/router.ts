@@ -13,4 +13,7 @@ Router.map(function () {
   this.route('model-works', { path: 'model-works/:id' });
   this.route('controller-works', { path: 'controller-works/:id' });
   this.route('component-works', { path: 'component-works/:id' });
+  this.route('outlet-works',function() {
+    this.route('sub-route');
+  });
 });
