@@ -4,5 +4,5 @@
       "oldVersion": "0.0.1"
     }
   },
-  "description": "\n\n\n\n"
+  "description": "## Release (2024-03-18)\n\n\n\n#### :house: Internal\n* [#3](https://github.com/patricklx/ember-routable-component/pull/3) delete file ([@patricklx](https://github.com/patricklx))\n* [#2](https://github.com/patricklx/ember-routable-component/pull/2) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n\n#### Committers: 2\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
 }
