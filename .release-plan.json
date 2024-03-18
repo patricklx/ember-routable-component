@@ -1,25 +1,8 @@
 {
   "solution": {
     "ember-routable-component": {
-      "impact": "minor",
-      "oldVersion": "0",
-      "newVersion": "0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./package.json"
+      "oldVersion": "0.0.1"
     }
   },
-  "description": ""
+  "description": "\n\n\n\n"
 }
