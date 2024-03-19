@@ -115,6 +115,24 @@ class MyRouteComponent extends Component {
 export default RoutableComponentRoute(MyRouteComponent);
 ```
 
+
+```gjs
+// app/routes/my-route.gjs
+import RoutableComponentRoute from 'ember-routable-component';
+import Component from "@glimmer/component";
+
+class MyRouteComponent extends Component {
+  <template>Hello, {{this.message}}. Why was I screaming? {{yield 'my-name' to='named-outlet'}}</template>
+
+  get message() {
+    return String(this.args.model).toUpperCase();
+  }
+}
+
+export default RoutableComponentRoute(MyRouteComponent);
+```
+
+
 With this feature, it eliminates most of the reasons for needing controllers,
 other than for query params (which is another coherence gap Polaris would need
 to address). We suggest exploring moving your non-QP controller logic into a
