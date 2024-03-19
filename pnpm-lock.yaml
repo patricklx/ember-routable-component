@@ -207,8 +207,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(ember-source@5.2.0)
       ember-cli-babel:
-        specifier: ^8.0.0
-        version: 8.0.0(@babel/core@7.22.10)
+        specifier: ^8.2.0
+        version: 8.2.0(@babel/core@7.22.10)
       ember-cli-clean-css:
         specifier: ^2.0.0
         version: 2.0.0
@@ -7400,8 +7400,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-babel@8.0.0(@babel/core@7.22.10):
-    resolution: {integrity: sha512-nf8BFgm6jy+B5tKeovHtcErfTZwzItsB6pJfTJGGR6tg74KLWtLFB5u/zB9S6c8ww1QacMltsffFz2iedCDBPw==}
+  /ember-cli-babel@8.2.0(@babel/core@7.22.10):
+    resolution: {integrity: sha512-8H4+jQElCDo6tA7CamksE66NqBXWs7VNpS3a738L9pZCjg2kXIX4zoyHzkORUqCtr0Au7YsCnrlAMi1v2ALo7A==}
     engines: {node: 16.* || 18.* || >= 20}
     peerDependencies:
       '@babel/core': ^7.12.0
@@ -7412,6 +7412,7 @@ packages:
       '@babel/plugin-proposal-decorators': 7.24.0(@babel/core@7.22.10)
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.22.10)
       '@babel/plugin-proposal-private-property-in-object': 7.21.11(@babel/core@7.22.10)
+      '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.22.10)
       '@babel/plugin-transform-modules-amd': 7.23.3(@babel/core@7.22.10)
       '@babel/plugin-transform-runtime': 7.24.0(@babel/core@7.22.10)
       '@babel/plugin-transform-typescript': 7.23.6(@babel/core@7.22.10)
