@@ -1,3 +1,14 @@
 Warning: unknown package "test-app"
 Warning: unknown package "test-app"
 Warning: unknown package "test-app"
+# Unlabeled Changes
+
+* `test-app`
+  * [#16](https://github.com/patricklx/ember-routable-component/pull/16) Bump ember-cli-babel from 8.0.0 to 8.2.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+  * [#17](https://github.com/patricklx/ember-routable-component/pull/17) Bump stylelint from 15.10.3 to 16.2.1 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* `ember-routable-component`
+  * [#15](https://github.com/patricklx/ember-routable-component/pull/15) Bump rollup-plugin-copy from 3.4.0 to 3.5.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* `ember-routable-component`, `test-app`
+  * [#13](https://github.com/patricklx/ember-routable-component/pull/13) Bump ember-template-lint from 5.11.2 to 5.13.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+*Cannot plan release until the above changes are labeled*.
