@@ -306,8 +306,8 @@ importers:
         specifier: ^34.0.0
         version: 34.0.0(stylelint@16.2.1)
       stylelint-prettier:
-        specifier: ^4.0.2
-        version: 4.0.2(prettier@3.2.5)(stylelint@16.2.1)
+        specifier: ^5.0.0
+        version: 5.0.0(prettier@3.2.5)(stylelint@16.2.1)
       tracked-built-ins:
         specifier: ^3.1.1
         version: 3.1.1
@@ -14219,12 +14219,12 @@ packages:
       stylelint-config-recommended: 13.0.0(stylelint@16.2.1)
     dev: true
 
-  /stylelint-prettier@4.0.2(prettier@3.2.5)(stylelint@16.2.1):
-    resolution: {integrity: sha512-EoHnR2PiaWgpGtoI4VW7AzneMfwmwQsNwQ+3/E2k/a+ju5yO6rfPfop4vzPQKcJN4ZM1YbspEOPu88D8538sbg==}
-    engines: {node: ^14.17.0 || >=16.0.0}
+  /stylelint-prettier@5.0.0(prettier@3.2.5)(stylelint@16.2.1):
+    resolution: {integrity: sha512-RHfSlRJIsaVg5Br94gZVdWlz/rBTyQzZflNE6dXvSxt/GthWMY3gEHsWZEBaVGg7GM+XrtVSp4RznFlB7i0oyw==}
+    engines: {node: '>=18.12.0'}
     peerDependencies:
       prettier: '>=3.0.0'
-      stylelint: '>=15.8.0'
+      stylelint: '>=16.0.0'
     dependencies:
       prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
