@@ -25,8 +25,8 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.2
+        version: 8.2.2
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -95,8 +95,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       concurrently:
-        specifier: ^8.0.1
-        version: 8.2.0
+        specifier: ^8.2.2
+        version: 8.2.2
       ember-source:
         specifier: ^5.7.0
         version: 5.7.0(@babel/core@7.22.10)(@glimmer/component@1.1.2)(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.88.2)
@@ -195,8 +195,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       concurrently:
-        specifier: ^8.2.0
-        version: 8.2.0
+        specifier: ^8.2.2
+        version: 8.2.2
       ember-auto-import:
         specifier: ^2.7.2
         version: 2.7.2(@glint/template@1.3.0)(webpack@5.88.2)
@@ -459,6 +459,24 @@ packages:
       semver: 6.3.1
     dev: true
 
+  /@babel/helper-create-class-features-plugin@7.24.0(@babel/core@7.24.0):
+    resolution: {integrity: sha512-QAH+vfvts51BCsNZ2PhY6HAggnlS6omLLFTsIpeqZk/MmJ6cW7tgz5yRv0fMJThcr6FmbMrENh1RgrWPTYA76g==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.24.0
+      '@babel/helper-annotate-as-pure': 7.22.5
+      '@babel/helper-environment-visitor': 7.22.20
+      '@babel/helper-function-name': 7.23.0
+      '@babel/helper-member-expression-to-functions': 7.23.0
+      '@babel/helper-optimise-call-expression': 7.22.5
+      '@babel/helper-replace-supers': 7.22.20(@babel/core@7.24.0)
+      '@babel/helper-skip-transparent-expression-wrappers': 7.22.5
+      '@babel/helper-split-export-declaration': 7.22.6
+      semver: 6.3.1
+    dev: true
+
   /@babel/helper-create-class-features-plugin@7.24.1(@babel/core@7.22.10):
     resolution: {integrity: sha512-1yJa9dX9g//V6fDebXoEfEsxkZHk3Hcbm+zLhyu6qVgYFLvmTALTeV+jNU9e5RnYtioBrGEOdoI2joMSNQ/+aA==}
     engines: {node: '>=6.9.0'}
@@ -684,6 +702,18 @@ packages:
       '@babel/core': ^7.0.0
     dependencies:
       '@babel/core': 7.22.10
+      '@babel/helper-environment-visitor': 7.22.20
+      '@babel/helper-member-expression-to-functions': 7.23.0
+      '@babel/helper-optimise-call-expression': 7.22.5
+    dev: true
+
+  /@babel/helper-replace-supers@7.22.20(@babel/core@7.24.0):
+    resolution: {integrity: sha512-qsW0In3dbwQUbK8kejJ4R7IHVGwHJlV6lpG6UA7a9hSa2YEiAib+N1T2kr6PEeUT+Fl7najmSOS6SmAwCHK6Tw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.24.0
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-member-expression-to-functions': 7.23.0
       '@babel/helper-optimise-call-expression': 7.22.5
@@ -2405,7 +2435,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.0
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-create-class-features-plugin': 7.24.1(@babel/core@7.24.0)
+      '@babel/helper-create-class-features-plugin': 7.24.0(@babel/core@7.24.0)
       '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.24.0)
     dev: true
@@ -6651,8 +6681,8 @@ packages:
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  /concurrently@8.2.0:
-    resolution: {integrity: sha512-nnLMxO2LU492mTUj9qX/az/lESonSZu81UznYDoXtz1IQf996ixVqPAgHXwvHiHCAef/7S8HIK+fTFK7Ifk8YA==}
+  /concurrently@8.2.2:
+    resolution: {integrity: sha512-1dP4gpXFhei8IOtlXRE/T/4H88ElHgTiUzh71YUmtjTEHMSRS2Z/fgOxHSxxusGHogsRfxNq1vyAwxSC+EVyDg==}
     engines: {node: ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -7456,7 +7486,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.0
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.24.0)
-      '@babel/plugin-proposal-decorators': 7.24.0(@babel/core@7.24.0)
+      '@babel/plugin-proposal-decorators': 7.24.1(@babel/core@7.24.0)
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.24.0)
       '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.24.0)
       '@babel/preset-env': 7.24.0(@babel/core@7.24.0)
