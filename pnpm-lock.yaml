@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       create-release-plan-setup:
-        specifier: ^2.2.0
-        version: 2.2.0
+        specifier: ^2.3.1
+        version: 2.3.1
     devDependencies:
       '@glint/core':
         specifier: ^1.4.0
@@ -137,8 +137,8 @@ importers:
   test-app:
     dependencies:
       create-release-plan-setup:
-        specifier: ^2.2.0
-        version: 2.2.0
+        specifier: ^2.3.1
+        version: 2.3.1
       vscode-uri:
         specifier: ^3.0.8
         version: 3.0.8
@@ -7067,8 +7067,8 @@ packages:
       typescript: 5.4.2
     dev: true
 
-  /create-release-plan-setup@2.2.0:
-    resolution: {integrity: sha512-y7EwpQzUMWpLL6zWO9US6xrbOhcLIpZ2EThYOginpKcyZds50J8aabpwUZ99acfyt18czSNXi8yyPPajbwgkYA==}
+  /create-release-plan-setup@2.3.1:
+    resolution: {integrity: sha512-T0gYx/NYVTtoDFMWVp9Mu5rJ2RadIDWJAPv0VMTlRf058e/n37INV1rKSj84SClVNhlnULXW23NX5qgGqg18rQ==}
     engines: {node: 16.* || 18.* || >= 20}
     hasBin: true
     dependencies:
@@ -7079,7 +7079,7 @@ packages:
       hosted-git-info: 7.0.1
       lodash.template: 4.5.0
       semver: 7.6.0
-      sort-package-json: 2.8.0
+      sort-package-json: 2.10.0
       which: 4.0.0
     dev: false
 
@@ -14101,8 +14101,8 @@ packages:
       sort-object-keys: 1.1.3
     dev: true
 
-  /sort-package-json@2.8.0:
-    resolution: {integrity: sha512-PxeNg93bTJWmDGnu0HADDucoxfFiKkIr73Kv85EBThlI1YQPdc0XovBgg2llD0iABZbu2SlKo8ntGmOP9wOj/g==}
+  /sort-package-json@2.10.0:
+    resolution: {integrity: sha512-MYecfvObMwJjjJskhxYfuOADkXp1ZMMnCFC8yhp+9HDsk7HhR336hd7eiBs96lTXfiqmUNI+WQCeCMRBhl251g==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1
@@ -14111,6 +14111,7 @@ packages:
       git-hooks-list: 3.1.0
       globby: 13.2.2
       is-plain-obj: 4.1.0
+      semver: 7.6.0
       sort-object-keys: 1.1.3
     dev: false
 
