@@ -2,8 +2,8 @@
   "solution": {
     "ember-routable-component": {
       "impact": "minor",
-      "oldVersion": "0.1.1",
-      "newVersion": "0.2.0",
+      "oldVersion": "0.2.0",
+      "newVersion": "0.3.0",
       "constraints": [
         {
           "impact": "minor",
@@ -13,5 +13,5 @@
       "pkgJSONPath": "./ember-routable-component/package.json"
     }
   },
-  "description": "## Release (2024-03-18)\n\nember-routable-component 0.2.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-routable-component`, `test-app`\n  * [#9](https://github.com/patricklx/ember-routable-component/pull/9) support outlet ([@patricklx](https://github.com/patricklx))\n\n#### Committers: 1\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n"
+  "description": "## Release (2024-07-04)\n\nember-routable-component 0.3.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-routable-component`\n  * [#65](https://github.com/patricklx/ember-routable-component/pull/65) add signature ([@patricklx](https://github.com/patricklx))\n\n#### Committers: 1\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n"
 }
