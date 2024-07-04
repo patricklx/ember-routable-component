@@ -4,8 +4,8 @@ import type { TemplateOnlyComponent } from '@ember/component/template-only';
 import Controller from '@ember/controller';
 
 export interface Signature<
-  T,
-  Controller extends typeof Controller<T> | unknown,
+  T = unknown,
+  Controller extends typeof Controller<T> | unknown = unknown,
 > {
   Args: {
     controller: Controller;
@@ -19,15 +19,17 @@ export interface Signature<
 
 export default function RoutableComponentRoute<
   Model = unknown,
-  Controller extends typeof Controller<Model> = typeof Controller<Model>,
+  Controller extends typeof Controller<Model> | unknown = unknown,
 >(
   Component: TemplateOnlyComponent<Signature<Model, Controller>>,
 ): typeof Route<Model>;
 
 export default function RoutableComponentRoute<
   Model = unknown,
-  Controller extends typeof Controller<Model> = typeof Controller<Model>,
->(Component: Component<Signature<Model, Controller>>): typeof Route<Model>;
+  Controller extends typeof Controller<Model> | unknown = unknown,
+>(
+  component: typeof Component<Signature<Model, Controller>>,
+): typeof Route<Model>;
 
 export default function RoutableComponentRoute(Component: any) {
   return class Rout extends Route {
