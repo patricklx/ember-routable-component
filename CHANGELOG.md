@@ -2,6 +2,23 @@
 
 ## Release (2024-07-04)
 
+ember-routable-component 0.5.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-routable-component`
+  * [#65](https://github.com/patricklx/ember-routable-component/pull/65) add signature ([@patricklx](https://github.com/patricklx))
+
+#### :house: Internal
+* `ember-routable-component`
+  * [#66](https://github.com/patricklx/ember-routable-component/pull/66) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))
+  * [#12](https://github.com/patricklx/ember-routable-component/pull/12) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))
+
+#### Committers: 2
+- Patrick Pircher ([@patricklx](https://github.com/patricklx))
+- [@github-actions[bot]](https://github.com/apps/github-actions)
+
+## Release (2024-07-04)
+
 ember-routable-component 0.4.0 (minor)
 
 #### :rocket: Enhancement
