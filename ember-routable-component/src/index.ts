@@ -3,7 +3,10 @@ import Component from '@glimmer/component';
 import type { TemplateOnlyComponent } from '@ember/component/template-only';
 import Controller from '@ember/controller';
 
-export interface Signature<T, Controller extends typeof Controller<T>> {
+export interface Signature<
+  T,
+  Controller extends typeof Controller<T> | unknown,
+> {
   Args: {
     controller: Controller;
     model: T;
@@ -45,5 +48,5 @@ export default function RoutableComponentRoute(Component: any) {
 
 export class RoutableComponent<
   T = unknown,
-  Controller extends typeof Controller<T> = typeof Controller<T>,
-> extends Component<Signature<T, Controller>> {}
+  C extends typeof Controller<T> | unknown = unknown,
+> extends Component<Signature<T, C>> {}
