@@ -5,10 +5,10 @@ import Controller from '@ember/controller';
 
 export interface Signature<
   T = unknown,
-  Controller extends typeof Controller<T> | unknown = unknown,
+  C extends Controller<T> | unknown = unknown,
 > {
   Args: {
-    controller: Controller;
+    controller: C;
     model: T;
   };
   Blocks: {
@@ -19,17 +19,13 @@ export interface Signature<
 
 export default function RoutableComponentRoute<
   Model = unknown,
-  Controller extends typeof Controller<Model> | unknown = unknown,
->(
-  Component: TemplateOnlyComponent<Signature<Model, Controller>>,
-): typeof Route<Model>;
+  C extends Controller<Model> | unknown = unknown,
+>(Component: TemplateOnlyComponent<Signature<Model, C>>): typeof Route<Model>;
 
 export default function RoutableComponentRoute<
   Model = unknown,
-  Controller extends typeof Controller<Model> | unknown = unknown,
->(
-  component: typeof Component<Signature<Model, Controller>>,
-): typeof Route<Model>;
+  C extends Controller<Model> | unknown = unknown,
+>(component: Component<Signature<Model, C>>): typeof Route<Model>;
 
 export default function RoutableComponentRoute(Component: any) {
   return class Rout extends Route {
@@ -48,7 +44,9 @@ export default function RoutableComponentRoute(Component: any) {
   };
 }
 
-export class RoutableComponent<
-  T = unknown,
-  C extends typeof Controller<T> | unknown = unknown,
-> extends Component<Signature<T, C>> {}
+type GetModel<T> = T extends Controller<infer Model> ? Model : T;
+type GetController<T> = T extends Controller ? T : Controller<T>;
+
+export class RoutableComponent<T = unknown> extends Component<
+  Signature<GetModel<T>, GetController<T>>
+> {}
