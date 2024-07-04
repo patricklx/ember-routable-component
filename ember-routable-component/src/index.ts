@@ -27,6 +27,10 @@ export default function RoutableComponentRoute<
   C extends Controller<Model> | unknown = unknown,
 >(component: Component<Signature<Model, C>>): typeof Route<Model>;
 
+export default function RoutableComponentRoute(
+  component: typeof Component<any>,
+): typeof Route<any>;
+
 export default function RoutableComponentRoute(Component: any) {
   return class Rout extends Route {
     init() {
@@ -46,6 +50,7 @@ export default function RoutableComponentRoute(Component: any) {
 
 type GetModel<T> = T extends Controller<infer Model> ? Model : T;
 type GetController<T> = T extends Controller ? T : Controller<T>;
+
 
 export class RoutableComponent<T = unknown> extends Component<
   Signature<GetModel<T>, GetController<T>>
