@@ -2,8 +2,8 @@
   "solution": {
     "ember-routable-component": {
       "impact": "minor",
-      "oldVersion": "0.3.0",
-      "newVersion": "0.4.0",
+      "oldVersion": "0.4.0",
+      "newVersion": "0.5.0",
       "constraints": [
         {
           "impact": "minor",
@@ -17,5 +17,5 @@
       "pkgJSONPath": "./ember-routable-component/package.json"
     }
   },
-  "description": "## Release (2024-07-04)\n\nember-routable-component 0.4.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-routable-component`\n  * [#65](https://github.com/patricklx/ember-routable-component/pull/65) add signature ([@patricklx](https://github.com/patricklx))\n\n#### :house: Internal\n* `ember-routable-component`\n  * [#12](https://github.com/patricklx/ember-routable-component/pull/12) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n\n#### Committers: 2\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
+  "description": "## Release (2024-07-04)\n\nember-routable-component 0.5.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-routable-component`\n  * [#65](https://github.com/patricklx/ember-routable-component/pull/65) add signature ([@patricklx](https://github.com/patricklx))\n\n#### :house: Internal\n* `ember-routable-component`\n  * [#66](https://github.com/patricklx/ember-routable-component/pull/66) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n  * [#12](https://github.com/patricklx/ember-routable-component/pull/12) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n\n#### Committers: 2\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
 }
