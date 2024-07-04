@@ -297,8 +297,8 @@ importers:
         specifier: ^2.19.4
         version: 2.21.0
       qunit-dom:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^3.2.0
+        version: 3.2.0
       release-plan:
         specifier: ^0.9.0
         version: 0.9.0(encoding@0.1.13)
@@ -5877,9 +5877,8 @@ packages:
   quick-temp@0.1.8:
     resolution: {integrity: sha512-YsmIFfD9j2zaFwJkzI6eMG7y0lQP7YeWzgtFgNl38pGWZBSXJooZbOWwkcRot7Vt0Fg9L23pX0tqWU3VvLDsiA==}
 
-  qunit-dom@2.0.0:
-    resolution: {integrity: sha512-mElzLN99wYPOGekahqRA+mq7NcThXY9c+/tDkgJmT7W5LeZAFNyITr2rFKNnCbWLIhuLdFw88kCBMrJSfyBYpA==}
-    engines: {node: 12.* || 14.* || >= 16.*}
+  qunit-dom@3.2.0:
+    resolution: {integrity: sha512-VYFXbwod2sis16Nzgx5UrdCvjNUPYIAbTwEGv7hF1RfgJaVgG5ASVaQz9en0ZRvlybtql0LrVuAbleJU/57zQQ==}
 
   qunit@2.21.0:
     resolution: {integrity: sha512-kJJ+uzx5xDWk0oRrbOZ3zsm+imPULE58ZMIrNl+3POZl4a1k6VXj2E4OiqTmZ9j6hh9egE3kNgnAti9Q+BG6Yw==}
@@ -14423,14 +14422,9 @@ snapshots:
       rimraf: 2.7.1
       underscore.string: 3.3.6
 
-  qunit-dom@2.0.0:
+  qunit-dom@3.2.0:
     dependencies:
-      broccoli-funnel: 3.0.8
-      broccoli-merge-trees: 4.2.0
-      ember-cli-babel: 7.26.11
-      ember-cli-version-checker: 5.1.2
-    transitivePeerDependencies:
-      - supports-color
+      dom-element-descriptors: 0.5.1
 
   qunit@2.21.0:
     dependencies:
