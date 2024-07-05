@@ -31,11 +31,11 @@ export default function RoutableComponentRoute<T>(
 ): typeof Route<GetModel<T>>;
 
 export default function RoutableComponentRoute(
-  component: Component,
+  component: typeof Component<any>,
 ): typeof Route<any>;
 
 export default function RoutableComponentRoute(
-  component: TemplateOnlyComponent,
+  component: TemplateOnlyComponent<any>,
 ): typeof Route<any>;
 
 export default function RoutableComponentRoute(Component: any) {
