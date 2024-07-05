@@ -51,7 +51,10 @@ export default function RoutableComponentRoute(Component: any) {
 type GetModel<T> = T extends Controller<infer Model> ? Model : T;
 type GetController<T> = T extends Controller ? T : Controller<T>;
 
-
 export class RoutableComponent<T = unknown> extends Component<
   Signature<GetModel<T>, GetController<T>>
 > {}
+
+export type RTOC<T> = TemplateOnlyComponent<
+  Signature<GetModel<T>, GetController<T>>
+>;
