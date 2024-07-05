@@ -1,13 +1,11 @@
 import Route from 'ember-routable-component';
-import ControllerWorksController from 'test-app/controllers/controller-works';
+import Controller from '@ember/controller';
 
-interface Signature {
-  Args: {
-    controller: ControllerWorksController;
-  };
+class MyController extends Controller {
+  declare specialMessage: string;
 }
 
-export default class ComponentWorksRoute extends Route<Signature>(
+export default class ComponentWorksRoute extends Route<MyController>(
   <template>hello, {{@controller.specialMessage}}</template>,
 ) {
   model({ id }: { id: string }): string {

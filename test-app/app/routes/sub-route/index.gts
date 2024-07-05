@@ -7,6 +7,4 @@ interface Signature {
   };
 }
 
-export default Route<Signature>(
-  <template>hello sub route</template>,
-);
+export default Route<Signature>(<template>hello sub route</template>);

@@ -1,11 +1,11 @@
 import Route from '@ember/routing/route';
 import Component from '@glimmer/component';
 import type { TemplateOnlyComponent } from '@ember/component/template-only';
-import Controller from '@ember/controller';
+import type Controller from '@ember/controller';
 
 export interface Signature<
   T = unknown,
-  C extends Controller<T> | unknown = unknown,
+  C extends Controller<T> | unknown = Controller<T>,
 > {
   Args: {
     controller: C;
@@ -17,18 +17,25 @@ export interface Signature<
   };
 }
 
-export default function RoutableComponentRoute<
-  Model = unknown,
-  C extends Controller<Model> | unknown = unknown,
->(Component: TemplateOnlyComponent<Signature<Model, C>>): typeof Route<Model>;
+type GetModel<T> = T extends Controller<infer Model> ? Model : T;
+type GetController<T> = T extends Controller ? T : Controller<T>;
 
-export default function RoutableComponentRoute<
-  Model = unknown,
-  C extends Controller<Model> | unknown = unknown,
->(component: Component<Signature<Model, C>>): typeof Route<Model>;
+type GetSignature<T> = Signature<GetModel<T>, GetController<T>>;
+
+export default function RoutableComponentRoute<T>(
+  Component: TemplateOnlyComponent<GetSignature<T>>,
+): typeof Route<GetModel<T>>;
+
+export default function RoutableComponentRoute<T>(
+  component: typeof Component<GetSignature<T>>,
+): typeof Route<GetModel<T>>;
 
 export default function RoutableComponentRoute(
-  component: typeof Component<any>,
+  component: Component,
+): typeof Route<any>;
+
+export default function RoutableComponentRoute(
+  component: TemplateOnlyComponent,
 ): typeof Route<any>;
 
 export default function RoutableComponentRoute(Component: any) {
@@ -48,13 +55,8 @@ export default function RoutableComponentRoute(Component: any) {
   };
 }
 
-type GetModel<T> = T extends Controller<infer Model> ? Model : T;
-type GetController<T> = T extends Controller ? T : Controller<T>;
-
 export class RoutableComponent<T = unknown> extends Component<
-  Signature<GetModel<T>, GetController<T>>
+  GetSignature<T>
 > {}
 
-export type RTOC<T> = TemplateOnlyComponent<
-  Signature<GetModel<T>, GetController<T>>
->;
+export type RTOC<T> = TemplateOnlyComponent<GetSignature<T>>;
