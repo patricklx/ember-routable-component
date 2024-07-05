@@ -2,6 +2,17 @@
 
 ## Release (2024-07-05)
 
+ember-routable-component 1.1.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-routable-component`
+  * [#76](https://github.com/patricklx/ember-routable-component/pull/76) fix type ([@patricklx](https://github.com/patricklx))
+
+#### Committers: 1
+- Patrick Pircher ([@patricklx](https://github.com/patricklx))
+
+## Release (2024-07-05)
+
 ember-routable-component 1.0.0 (major)
 
 #### :boom: Breaking Change
