@@ -1,5 +1,24 @@
 # Changelog
 
+## Release (2024-07-05)
+
+ember-routable-component 1.0.0 (major)
+
+#### :boom: Breaking Change
+* `ember-routable-component`, `test-app`
+  * [#70](https://github.com/patricklx/ember-routable-component/pull/70) fix typing ([@patricklx](https://github.com/patricklx))
+
+#### :rocket: Enhancement
+* `ember-routable-component`, `test-app`
+  * [#70](https://github.com/patricklx/ember-routable-component/pull/70) fix typing ([@patricklx](https://github.com/patricklx))
+
+#### :house: Internal
+* `ember-routable-component`
+  * [#68](https://github.com/patricklx/ember-routable-component/pull/68) mark as peer dep ([@patricklx](https://github.com/patricklx))
+
+#### Committers: 1
+- Patrick Pircher ([@patricklx](https://github.com/patricklx))
+
 ## Release (2024-07-04)
 
 ember-routable-component 0.5.0 (minor)
