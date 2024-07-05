@@ -7,6 +7,9 @@
   "compilerOptions": {
     "allowJs": true,
     "allowImportingTsExtensions": true,
-    "declarationDir": "declarations"
+    "declarationDir": "declarations",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false
   }
 }
