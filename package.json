@@ -5,7 +5,7 @@
   "author": "Patrick Pircher",
   "scripts": {
     "build": "pnpm --filter ember-routable-component run build",
-    "lint": "pnpm --filter * run lint",
+    "lint": "pnpm --filter ember-routable-component --filter test-app run lint",
     "lint:fix": "pnpm --filter * run lint:fix",
     "prepare": "pnpm build",
     "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
@@ -19,13 +19,25 @@
   },
   "devDependencies": {
     "@glint/core": "^1.4.0",
-    "@glint/environment-ember-loose": "^1.3.0",
-    "@glint/environment-ember-template-imports": "^1.3.0",
+    "@glint/environment-ember-loose": "^1.4.0",
+    "@glint/environment-ember-template-imports": "^1.4.0",
     "@glint/template": "^1.4.0",
     "concurrently": "^8.2.2",
     "prettier": "^3.3.2",
     "prettier-plugin-ember-template-tag": "^2.0.1",
     "release-plan": "^0.9.0",
     "typescript": "^5.5.3"
+  },
+  "workspaces": [
+    "ember-routable-component",
+    "test-app"
+  ],
+  "pnpm": {
+    "overrides": {
+      "@glint/core": "^1.4.1-unstable.e8d1c9a",
+      "@glint/environment-ember-loose": "^1.4.1-unstable.e8d1c9a",
+      "@glint/environment-ember-template-imports": "^1.4.1-unstable.e8d1c9a",
+      "ember-eslint-parser": "^0.4.0"
+    }
   }
 }
