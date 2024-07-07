@@ -55,6 +55,9 @@ export default function RoutableComponentRoute(Component: any) {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export interface RoutableComponent<T = unknown> {}
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 export class RoutableComponent<T> extends Component<GetSignature<T>> {}
 
 export type RTOC<T> = TemplateOnlyComponent<GetSignature<T>>;
