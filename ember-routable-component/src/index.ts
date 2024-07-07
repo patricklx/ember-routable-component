@@ -55,8 +55,6 @@ export default function RoutableComponentRoute(Component: any) {
   };
 }
 
-export class RoutableComponent<T = unknown> extends Component<
-  GetSignature<T>
-> {}
+export class RoutableComponent<T> extends Component<GetSignature<T>> {}
 
 export type RTOC<T> = TemplateOnlyComponent<GetSignature<T>>;
