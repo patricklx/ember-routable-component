@@ -15,8 +15,8 @@ importers:
   .:
     dependencies:
       create-release-plan-setup:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^3.0.0
+        version: 3.0.0
     devDependencies:
       '@glint/core':
         specifier: ^1.4.1-unstable.e8d1c9a
@@ -146,8 +146,8 @@ importers:
   test-app:
     dependencies:
       create-release-plan-setup:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^3.0.0
+        version: 3.0.0
       vscode-uri:
         specifier: ^3.0.8
         version: 3.0.8
@@ -2944,8 +2944,8 @@ packages:
       typescript:
         optional: true
 
-  create-release-plan-setup@2.4.0:
-    resolution: {integrity: sha512-5D2WXV39LVT/GloDp/8hXHJi2247CmmpUNwuitYCwVchDmiD+Z9ko1hTih//bNXAtSjImPwfCHla+mSE1eOgeA==}
+  create-release-plan-setup@3.0.0:
+    resolution: {integrity: sha512-3XjWsk7H1PssV9u4erWYr4JCaC7P7WD3X2QhdDLTOyH0a2xhGvwGd0iWany8SIj87Oc0Nr7yhmk/mMQHF1Vwfw==}
     engines: {node: 16.* || 18.* || >= 20}
     hasBin: true
 
@@ -10523,7 +10523,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.3
 
-  create-release-plan-setup@2.4.0:
+  create-release-plan-setup@3.0.0:
     dependencies:
       ejs: 3.1.10
       execa: 8.0.1
