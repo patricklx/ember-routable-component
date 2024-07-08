@@ -15,7 +15,7 @@
     "test:ember": "pnpm workspace test-app run test:ember"
   },
   "dependencies": {
-    "create-release-plan-setup": "^2.4.0"
+    "create-release-plan-setup": "^3.0.0"
   },
   "devDependencies": {
     "@glint/core": "^1.4.0",
