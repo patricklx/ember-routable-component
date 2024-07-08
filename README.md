@@ -180,42 +180,56 @@ export default RoutableComponentRoute(
 
 However, as of writing, this feature was never implemented, and the Ember
 TypeScript is considering other alternatives. In the meantime, the adapter
-function can accept a generic argument for the signature to make things easier:
+function can accept a controller argument for the signature to make things easier:
 
 ```gts
 // app/templates/my-route.gts
 import RoutableComponentRoute from "ember-routable-component";
 
-interface MyRouteSignature {
-  Args: {
-    model: string;
-  }
+class MyController extends Controller<string> {
+  declare x: number;
 }
 
-export default RoutableComponentRoute<MyRouteSignature>(
-  <template>
-    Now Glint is supposed to know {{@model}} is a string.
-  </template>
-);
+export default class ModelWorksRoute extends Route<MyController>(
+  <template>model is {{@model}} {{@controller.x}}</template>,
+) {
+  model({ id }: { id: string }): string {
+    return id;
+  }
+}
 ```
 
-This feature is only needed for bare `<template>` tags. Class-based components
+For Class-based components you can use the RoutableComponent 
 don't have this issue as they already accept a signature generic:
 
 ```gts
 // app/templates/my-route.gts
-import RoutableComponentRoute from "ember-routable-component";
+import RoutableComponentRoute, { RoutableComponent } from "ember-routable-component";
 import Component from "@glimmer/component";
 
-interface MyRouteSignature {
-  Args: {
-    model: string;
-  }
+class MyController extends Controller<string> {
 }
 
-class MyRouteComponent extends Component<MyRouteSignature> {
+
+class MyRouteComponent extends RoutableComponent<MyController> {
   <template>
     Glint knows this is a string: {{@model}}
+  </template>
+}
+
+export default RoutableComponentRoute(MyRouteComponent);
+```
+
+It can also be used without any type
+```gts
+// app/templates/my-route.gts
+import RoutableComponentRoute, { RoutableComponent } from "ember-routable-component";
+import Component from "@glimmer/component";
+
+
+class MyRouteComponent extends RoutableComponent {
+  <template>
+    Glint knows this is a string: {{@model}} <-- is of type any
   </template>
 }
 
