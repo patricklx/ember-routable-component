@@ -46,7 +46,7 @@ paradigm is available.
 // app/routes/my-route.gjs
 import RoutableComponentRoute from 'ember-routable-component';
 
-// This adapter converts the `<template>` into a route template
+// this will generate a Route class and use the provided template
 export default RoutableComponentRoute(<template>Hello world!</template>);
 ```
 
