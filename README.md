@@ -1,7 +1,7 @@
 # ember-routable-component
 
 this is based on https://github.com/discourse/ember-route-template
-but instead of creating template gts filed we use route.gts files directly.
+but instead of creating template gts files we use route.gts files directly.
 
 [polaris]: https://blog.emberjs.com/ember-5-0-released/#toc_the-journey-towards-ember-polaris
 [resources]: https://github.com/NullVoxPopuli/ember-resources/blob/main/docs/docs/README.md
