@@ -219,8 +219,8 @@ importers:
         specifier: ^8.2.0
         version: 8.2.0(@babel/core@7.24.7)
       ember-cli-clean-css:
-        specifier: ^2.0.0
-        version: 2.0.1
+        specifier: ^3.0.0
+        version: 3.0.0
       ember-cli-dependency-checker:
         specifier: ^3.3.2
         version: 3.3.2(ember-cli@5.10.0(ejs@3.1.10)(handlebars@4.7.8)(underscore@1.13.6))
@@ -2530,10 +2530,9 @@ packages:
   clean-base-url@1.0.0:
     resolution: {integrity: sha512-9q6ZvUAhbKOSRFY7A/irCQ/rF0KIpa3uXpx6izm8+fp7b2H4hLeUJ+F1YYk9+gDQ/X8Q0MEyYs+tG3cht//HTg==}
 
-  clean-css@3.4.28:
-    resolution: {integrity: sha512-aTWyttSdI2mYi07kWqHi24NUU9YlELFKGOAgFzZjDN1064DMAOy2FBuoyGmkKRlXkbpXd0EVHmiVkbKhKoirTw==}
-    engines: {node: '>=0.10.0'}
-    hasBin: true
+  clean-css@5.3.3:
+    resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
+    engines: {node: '>= 10.0'}
 
   clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
@@ -2637,10 +2636,6 @@ packages:
 
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
-
-  commander@2.8.1:
-    resolution: {integrity: sha512-+pJLBFVk+9ZZdlAOB5WuIElVPPth47hILFkmGym57aq8kwxsowvByvB0DHs1vQAhyMZzdcpTtF0VDKGkSDR4ZQ==}
-    engines: {node: '>= 0.6.x'}
 
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -3228,8 +3223,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.12.0
 
-  ember-cli-clean-css@2.0.1:
-    resolution: {integrity: sha512-djUYfFZvMGa+/h74E83lWS255AUFS2A+Kp3pupQaqUSa7i9g9PXhbOqOgC03T6D/rASxgSpl+Mh3knDvhAJ7MQ==}
+  ember-cli-clean-css@3.0.0:
+    resolution: {integrity: sha512-BbveJCyRvzzkaTH1llLW+MpHe/yzA5zpHOpMIg2vp/3JD9mban9zUm7lphaB0TSpPuMuby9rAhTI8pgXq0ifIA==}
     engines: {node: 16.* || >= 18}
 
   ember-cli-dependency-checker@3.3.2:
@@ -4182,9 +4177,6 @@ packages:
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
-
-  graceful-readlink@1.0.1:
-    resolution: {integrity: sha512-8tLu60LgxF6XpdbK8OW3FA+IfTNBn1ZHGHKF4KQbEeSkajYw5PlYJcKluntgegDPTg8UkHjpet1T82vk6TQ68w==}
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
@@ -10242,10 +10234,9 @@ snapshots:
 
   clean-base-url@1.0.0: {}
 
-  clean-css@3.4.28:
+  clean-css@5.3.3:
     dependencies:
-      commander: 2.8.1
-      source-map: 0.4.4
+      source-map: 0.6.1
 
   clean-stack@2.2.0: {}
 
@@ -10338,10 +10329,6 @@ snapshots:
       delayed-stream: 1.0.0
 
   commander@2.20.3: {}
-
-  commander@2.8.1:
-    dependencies:
-      graceful-readlink: 1.0.1
 
   commander@4.1.1: {}
 
@@ -10851,10 +10838,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-clean-css@2.0.1:
+  ember-cli-clean-css@3.0.0:
     dependencies:
       broccoli-persistent-filter: 3.1.3
-      clean-css: 3.4.28
+      clean-css: 5.3.3
       json-stable-stringify: 1.1.1
     transitivePeerDependencies:
       - supports-color
@@ -12550,8 +12537,6 @@ snapshots:
       url-parse-lax: 3.0.0
 
   graceful-fs@4.2.11: {}
-
-  graceful-readlink@1.0.1: {}
 
   graphemer@1.4.0: {}
 
