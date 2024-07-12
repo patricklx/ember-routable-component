@@ -180,13 +180,10 @@ If you need custom functionality in routes:
 import RoutableComponentRoute from "ember-routable-component";
 import Component from "@glimmer/component";
 
-interface MyRouteSignature {
-  Args: {
-    model: string;
-  }
+class MyController extends Controller<string> {
 }
 
-class MyRouteComponent extends Component<MyRouteSignature> {
+class MyRouteComponent extends Component<MyController> {
   <template>
     Glint knows this is a string: {{@model}}
   </template>
