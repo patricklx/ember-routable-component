@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2024-07-07)
 
 ember-routable-component 1.2.0 (minor)
