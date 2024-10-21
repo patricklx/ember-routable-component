@@ -34,11 +34,11 @@ importers:
         specifier: ^8.2.2
         version: 8.2.2
       prettier:
-        specifier: ^3.3.2
-        version: 3.3.2
+        specifier: ^3.3.3
+        version: 3.3.3
       prettier-plugin-ember-template-tag:
         specifier: ^2.0.1
-        version: 2.0.2(prettier@3.3.2)
+        version: 2.0.2(prettier@3.3.3)
       release-plan:
         specifier: ^0.9.0
         version: 0.9.0(encoding@0.1.13)
@@ -286,7 +286,7 @@ importers:
         version: 17.9.0(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: ^5.2.1
-        version: 5.2.1(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.2)
+        version: 5.2.1(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)
       eslint-plugin-qunit:
         specifier: ^8.1.1
         version: 8.1.1(eslint@8.57.0)
@@ -294,11 +294,11 @@ importers:
         specifier: ^4.7.0
         version: 4.7.0
       prettier:
-        specifier: ^3.3.2
-        version: 3.3.2
+        specifier: ^3.3.3
+        version: 3.3.3
       prettier-plugin-ember-template-tag:
         specifier: ^2.0.1
-        version: 2.0.2(prettier@3.3.2)
+        version: 2.0.2(prettier@3.3.3)
       qunit:
         specifier: ^2.22.0
         version: 2.22.0
@@ -316,7 +316,7 @@ importers:
         version: 36.0.1(stylelint@16.7.0(typescript@5.5.3))
       stylelint-prettier:
         specifier: ^5.0.2
-        version: 5.0.2(prettier@3.3.2)(stylelint@16.7.0(typescript@5.5.3))
+        version: 5.0.2(prettier@3.3.3)(stylelint@16.7.0(typescript@5.5.3))
       tracked-built-ins:
         specifier: ^3.3.0
         version: 3.3.0
@@ -5747,6 +5747,11 @@ packages:
 
   prettier@3.3.2:
     resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -11664,6 +11669,16 @@ snapshots:
       '@types/eslint': 8.56.10
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
 
+  eslint-plugin-prettier@5.2.1(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3):
+    dependencies:
+      eslint: 8.57.0
+      prettier: 3.3.3
+      prettier-linter-helpers: 1.0.0
+      synckit: 0.9.2
+    optionalDependencies:
+      '@types/eslint': 8.56.10
+      eslint-config-prettier: 9.1.0(eslint@8.57.0)
+
   eslint-plugin-qunit@8.1.1(eslint@8.57.0):
     dependencies:
       eslint-utils: 3.0.0(eslint@8.57.0)
@@ -14087,9 +14102,19 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  prettier-plugin-ember-template-tag@2.0.2(prettier@3.3.3):
+    dependencies:
+      '@babel/core': 7.24.9
+      content-tag: 1.2.2
+      prettier: 3.3.3
+    transitivePeerDependencies:
+      - supports-color
+
   prettier@2.8.8: {}
 
   prettier@3.3.2: {}
+
+  prettier@3.3.3: {}
 
   pretty-ms@3.2.0:
     dependencies:
@@ -15010,9 +15035,9 @@ snapshots:
       stylelint: 16.7.0(typescript@5.5.3)
       stylelint-config-recommended: 14.0.1(stylelint@16.7.0(typescript@5.5.3))
 
-  stylelint-prettier@5.0.2(prettier@3.3.2)(stylelint@16.7.0(typescript@5.5.3)):
+  stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.7.0(typescript@5.5.3)):
     dependencies:
-      prettier: 3.3.2
+      prettier: 3.3.3
       prettier-linter-helpers: 1.0.0
       stylelint: 16.7.0(typescript@5.5.3)
 
