@@ -18,7 +18,7 @@
     "create-release-plan-setup": "^3.0.0"
   },
   "devDependencies": {
-    "@glint/core": "^1.4.1-unstable.4675b5c",
+    "@glint/core": "^1.5.0",
     "@glint/environment-ember-loose": "^1.4.1-unstable.4675b5c",
     "@glint/environment-ember-template-imports": "^1.4.1-unstable.4675b5c",
     "@glint/template": "^1.4.0",
