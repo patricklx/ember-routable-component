@@ -96,7 +96,7 @@ in with the `@model` and `@controller` arguments appropriately set.
 The hello world example from above is similar to first creating the component
 in the usual global location in `app/components`:
 
-```gjs
+```glimmer-js
 // app/components/hello-world.gjs
 <template>Hello world!</template>
 ```
@@ -120,7 +120,7 @@ named exports, if you need to access them from elsewhere.
 
 TypeScript and Glint is fully supported, just use the `.gts` extension instead.
 
-```gts
+```glimmer-ts
 // app/templates/my-route.gts
 import RoutableComponentRoute from "ember-routable-component";
 
@@ -139,7 +139,7 @@ export default class ModelWorksRoute extends Route<MyController>(
 
 For Class-based components you can use the RoutableComponent:
 
-```gts
+```glimmer-ts
 // app/templates/my-route.gts
 import RoutableComponentRoute, { RoutableComponent } from "ember-routable-component";
 import Component from "@glimmer/component";
@@ -158,7 +158,7 @@ export default RoutableComponentRoute(MyRouteComponent);
 ```
 
 It can also be used without any type
-```gts
+```glimmer-ts
 // app/templates/my-route.gts
 import RoutableComponentRoute, { RoutableComponent } from "ember-routable-component";
 import Component from "@glimmer/component";
@@ -175,7 +175,7 @@ export default RoutableComponentRoute(MyRouteComponent);
 
 If you need custom functionality in routes:
 
-```gts
+```glimmer-ts
 // app/templates/my-route.gts
 import RoutableComponentRoute from "ember-routable-component";
 import Component from "@glimmer/component";
