@@ -1,17 +1,8 @@
 {
   "solution": {
     "ember-routable-component": {
-      "impact": "minor",
-      "oldVersion": "1.1.0",
-      "newVersion": "1.2.0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./ember-routable-component/package.json"
+      "oldVersion": "1.2.0"
     }
   },
-  "description": "## Release (2024-07-07)\n\nember-routable-component 1.2.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-routable-component`, `test-app`\n  * [#79](https://github.com/patricklx/ember-routable-component/pull/79) fix typing ([@patricklx](https://github.com/patricklx))\n\n#### Committers: 1\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n"
+  "description": "## Release (2025-05-19)\n\n\n\n#### :memo: Documentation\n* [#125](https://github.com/patricklx/ember-routable-component/pull/125) gts highlighting in readme ([@evoactivity](https://github.com/evoactivity))\n\n#### Committers: 1\n- Liam Potter ([@evoactivity](https://github.com/evoactivity))\n"
 }
