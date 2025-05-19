@@ -1,5 +1,15 @@
 # Changelog
 
+## Release (2025-05-19)
+
+
+
+#### :memo: Documentation
+* [#125](https://github.com/patricklx/ember-routable-component/pull/125) gts highlighting in readme ([@evoactivity](https://github.com/evoactivity))
+
+#### Committers: 1
+- Liam Potter ([@evoactivity](https://github.com/evoactivity))
+
 ## Release (2024-07-07)
 
 ember-routable-component 1.2.0 (minor)
